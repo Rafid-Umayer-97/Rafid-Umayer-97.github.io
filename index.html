@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rafid Umayer Murshed — Personal Website</title>
+  <meta name="description" content="CS PhD student at UIUC. Physics-informed AI for next-gen wireless, UM-MIMO, RF propagation, 6G.">
+  <link rel="canonical" href="https://USERNAME.github.io/" />
+  <meta property="og:title" content="Rafid Umayer Murshed — Personal Website">
+  <meta property="og:description" content="Physics-informed AI for next-gen wireless, UM-MIMO, RF propagation, 6G.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://USERNAME.github.io/">
+  <meta name="theme-color" content="#111827">
+
+  <style>
+    :root {
+      --bg: #0b1020;
+      --panel: #0f172a;
+      --text: #e5e7eb;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-2: #22d3ee;
+      --border: #1f2937;
+      --shadow: rgba(0,0,0,0.25);
+      --maxw: 980px;
+      --radius: 16px;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    body {
+      font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(1200px 800px at 20% -10%, #12213f 0%, var(--bg) 50%) fixed, var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .wrap { max-width: var(--maxw); margin: 0 auto; padding: 24px; }
+    header { position: sticky; top: 0; backdrop-filter: blur(8px); background: rgba(11,16,32,0.6); border-bottom: 1px solid var(--border); z-index: 10; }
+    nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px 0; }
+    nav .brand { font-weight: 700; letter-spacing: 0.2px; }
+    nav ul { display: flex; gap: 14px; list-style: none; padding: 0; margin: 0; flex-wrap: wrap; }
+    nav a.btn { background: linear-gradient(90deg, var(--accent), var(--accent-2)); color: #001018; padding: 8px 14px; border-radius: 999px; font-weight: 600; }
+    .hero { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 24px; align-items: center; padding: 28px 0 8px; }
+    @media (max-width: 860px) { .hero { grid-template-columns: 1fr; } }
+    .panel { background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.0)); border: 1px solid var(--border); border-radius: var(--radius); box-shadow: 0 10px 30px var(--shadow); }
+    .p24 { padding: 24px; }
+    h1 { font-size: clamp(28px, 3.4vw, 42px); line-height: 1.2; margin: 0 0 8px; }
+    h2 { font-size: clamp(22px, 2.6vw, 32px); margin: 28px 0 10px; line-height: 1.25; }
+    .muted { color: var(--muted); }
+    .chips { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 10px; }
+    .chip { border: 1px solid var(--border); background: #0d1329; padding: 6px 10px; border-radius: 999px; font-size: 13px; }
+    .grid { display: grid; gap: 16px; }
+    .grid.two { grid-template-columns: repeat(2, 1fr); }
+    .grid.three { grid-template-columns: repeat(3, 1fr); }
+    @media (max-width: 900px) { .grid.two, .grid.three { grid-template-columns: 1fr; } }
+    .card > h3 { margin: 0 0 6px; font-size: 18px; }
+    footer { margin: 36px 0 16px; color: var(--muted); font-size: 14px; }
+    .kbd { font-size: 12px; border: 1px solid var(--border); padding: 2px 6px; border-radius: 6px; background: #0d1329; }
+    .right { text-align: right; }
+    .flex { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+    .spaced { justify-content: space-between; }
+    .search { width: 100%; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--border); background: #0d1329; color: var(--text); }
+    .pill { padding: 2px 10px; font-size: 12px; border-radius: 999px; border: 1px solid var(--border); background: #0d1329; }
+    .anchor { scroll-margin-top: 90px; }
+    .skip-link { position: absolute; left: -10000px; top: auto; width: 1px; height: 1px; overflow: hidden; }
+    .skip-link:focus { position: static; width: auto; height: auto; padding: 6px; background: var(--panel); border: 1px solid var(--border); border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <a href="#main" class="skip-link">Skip to content</a>
+  <header>
+    <div class="wrap">
+      <nav>
+        <div class="brand">Rafid U. Murshed</div>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#pubs">Publications</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a class="btn" href="cv/Rafid_CV_Full.pdf">CV</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="wrap">
+    <section class="hero">
+      <div class="panel p24">
+        <h1>CS PhD Student @ UIUC</h1>
+        <p class="muted">
+          Physics-informed AI for next-generation wireless systems: deep learning for <strong>RF propagation</strong>,
+          <strong>UM-MIMO</strong>, and <strong>6G</strong>—bridging radio physics with modern ML.
+        </p>
+        <div class="chips">
+          <span class="chip">RF propagation</span>
+          <span class="chip">Deep learning</span>
+          <span class="chip">UM-MIMO</span>
+          <span class="chip">6G</span>
+          <span class="chip">RIS/Metasurfaces</span>
+          <span class="chip">Neural fields</span>
+        </div>
+        <div class="flex spaced" style="margin-top: 16px;">
+          <div class="flex">
+            <a class="pill" href="mailto:rafid.buet.eee16@gmail.com" aria-label="email">✉︎ Email</a>
+            <a class="pill" href="https://scholar.google.com/citations?user=-ZwK1vkAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a>
+            <a class="pill" href="https://github.com/Blaze-raf97" target="_blank" rel="noopener">GitHub</a>
+          </div>
+          <div class="right muted">Last updated: 2025</div>
+        </div>
+      </div>
+      <div class="panel p24">
+        <h2 id="about" class="anchor">About</h2>
+        <p>
+          I am <strong>Rafid Umayer Murshed</strong>, a first-year Computer Science PhD student at the
+          University of Illinois Urbana-Champaign. I completed an M.Sc. (Thesis) in Electrical Engineering at
+          The University of Texas at Dallas and a B.Sc. in Electrical & Electronic Engineering at BUET.
+        </p>
+        <ul>
+          <li><span class="kbd">Interests</span> Physics-informed AI • RF learning • UM-MIMO beamforming • RIS/Metasurfaces • Neural fields</li>
+          <li><span class="kbd">Goal</span> Build trustworthy wireless digital twins for 6G.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel p24 anchor" id="research">
+      <h2>Research Highlights</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Robust UM-MIMO under imperfect CSI</h3>
+          <p class="muted">Self-supervised contrastive learning and physics-aware augmentations to improve achievable rate and error resilience.</p>
+        </div>
+        <div class="card">
+          <h3>Neural RF fields</h3>
+          <p class="muted">NeRF/GS-style representations adapted for multi-frequency channel estimation and propagation modeling.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel p24 anchor" id="pubs">
+      <div class="flex spaced">
+        <h2>Selected Publications</h2>
+        <input id="pubSearch" class="search" placeholder="Filter publications (title/venue/year)…" aria-label="Filter publications"/>
+      </div>
+      <div id="pubList" class="grid">
+        <article class="card" data-year="2024">
+          <h3>Self-supervised Contrastive Learning for 6G UM-MIMO THz Communications: Improving Robustness Under Imperfect CSI</h3>
+          <div class="muted">IEEE ICC Workshops, 2024</div>
+          <a class="pill" href="https://ieeexplore.ieee.org/document/10615313" target="_blank" rel="noopener">Paper</a>
+        </article>
+        <article class="card" data-year="2024">
+          <h3>Beyond Traditional Beamforming: Singular Vector Projection Techniques for MU-MIMO</h3>
+          <div class="muted">IEEE Communications Letters, 2024</div>
+          <a class="pill" href="https://ieeexplore.ieee.org/document/10816401" target="_blank" rel="noopener">Paper</a>
+        </article>
+        <article class="card" data-year="2024">
+          <h3>Real-time Seismic Intensity Prediction using Self-supervised Contrastive GNN for Earthquake Early Warning</h3>
+          <div class="muted">IEEE TGRS, 2024</div>
+          <a class="pill" href="https://ieeexplore.ieee.org/abstract/document/10459332" target="_blank" rel="noopener">Paper</a>
+        </article>
+        <article class="card" data-year="2023">
+          <h3>A CNN-LSTM-based Fusion Separation Deep Neural Network for 6G UM-MIMO Hybrid Beamforming</h3>
+          <div class="muted">IEEE Access, 2023</div>
+          <a class="pill" href="https://ieeexplore.ieee.org/document/10098778" target="_blank" rel="noopener">Paper</a>
+        </article>
+        <article class="card" data-year="2023">
+          <h3>CNN-based Signal Processing for Heart Rate via mmWave BCG</h3>
+          <div class="muted">Elsevier Array, 2023</div>
+          <a class="pill" href="https://www.sciencedirect.com/science/article/pii/S2590005623000528" target="_blank" rel="noopener">Paper</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="panel p24 anchor" id="projects">
+      <h2>Projects</h2>
+      <div class="grid two">
+        <div class="card">
+          <h3>Latency–Weather Analysis on ARA</h3>
+          <p class="muted">Empirical study of weather impacts on wireless KPIs with predictive modeling on rural testbeds.</p>
+        </div>
+        <div class="card">
+          <h3>IOSVB: Interference-Optimized Singular Vector Beamforming</h3>
+          <p class="muted">Low-complexity MU-MIMO beamforming with provable interference control.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="panel p24 anchor" id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:rafid.buet.eee16@gmail.com">rafid.buet.eee16@gmail.com</a></p>
+      <p>Links: <a href="https://scholar.google.com/citations?user=-ZwK1vkAAAAJ&hl=en" target="_blank" rel="noopener">Scholar</a> · <a href="https://github.com/Blaze-raf97" target="_blank" rel="noopener">GitHub</a></p>
+    </section>
+
+    <footer>
+      © 2025 • Hosted on GitHub Pages.
+    </footer>
+  </main>
+
+  <script>
+    // Simple publication filter
+    const input = document.getElementById('pubSearch');
+    const cards = Array.from(document.querySelectorAll('#pubList .card'));
+    input?.addEventListener('input', (e) => {
+      const q = e.target.value.trim().toLowerCase();
+      cards.forEach(c => {
+        const t = c.innerText.toLowerCase();
+        c.style.display = t.includes(q) ? '' : 'none';
+      });
+    });
+
+    // JSON-LD structured data for SEO
+    const jsonLd = {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Rafid Umayer Murshed",
+      "affiliation": {"@type":"CollegeOrUniversity","name":"University of Illinois Urbana-Champaign"},
+      "jobTitle": "PhD Student",
+      "url": "https://USERNAME.github.io/",
+      "email": "mailto:rafid.buet.eee16@gmail.com",
+      "sameAs": [
+        "https://scholar.google.com/citations?user=-ZwK1vkAAAAJ&hl=en",
+        "https://github.com/Blaze-raf97"
+      ],
+      "knowsAbout": ["Wireless communications","Deep learning","RF propagation","UM-MIMO","RIS/Metasurfaces","6G"]
+    };
+    const el = document.createElement('script');
+    el.type = 'application/ld+json';
+    el.textContent = JSON.stringify(jsonLd);
+    document.head.appendChild(el);
+  </script>
+</body>
+</html>
