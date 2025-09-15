@@ -145,33 +145,117 @@
         <h2>Selected Publications</h2>
         <input id="pubSearch" class="search" placeholder="Filter publications (title/venue/year)…" aria-label="Filter publications"/>
       </div>
-      <div id="pubList" class="grid">
-        <article class="card" data-year="2024">
-          <h3>Self-supervised Contrastive Learning for 6G UM-MIMO THz Communications: Improving Robustness Under Imperfect CSI</h3>
-          <div class="muted">IEEE ICC Workshops, 2024</div>
-          <a class="pill" href="https://ieeexplore.ieee.org/document/10615313" target="_blank" rel="noopener">Paper</a>
-        </article>
-        <article class="card" data-year="2024">
-          <h3>Beyond Traditional Beamforming: Singular Vector Projection Techniques for MU-MIMO</h3>
-          <div class="muted">IEEE Communications Letters, 2024</div>
-          <a class="pill" href="https://ieeexplore.ieee.org/document/10816401" target="_blank" rel="noopener">Paper</a>
-        </article>
-        <article class="card" data-year="2024">
-          <h3>Real-time Seismic Intensity Prediction using Self-supervised Contrastive GNN for Earthquake Early Warning</h3>
-          <div class="muted">IEEE TGRS, 2024</div>
-          <a class="pill" href="https://ieeexplore.ieee.org/abstract/document/10459332" target="_blank" rel="noopener">Paper</a>
-        </article>
-        <article class="card" data-year="2023">
-          <h3>A CNN-LSTM-based Fusion Separation Deep Neural Network for 6G UM-MIMO Hybrid Beamforming</h3>
-          <div class="muted">IEEE Access, 2023</div>
-          <a class="pill" href="https://ieeexplore.ieee.org/document/10098778" target="_blank" rel="noopener">Paper</a>
-        </article>
-        <article class="card" data-year="2023">
-          <h3>CNN-based Signal Processing for Heart Rate via mmWave BCG</h3>
-          <div class="muted">Elsevier Array, 2023</div>
-          <a class="pill" href="https://www.sciencedirect.com/science/article/pii/S2590005623000528" target="_blank" rel="noopener">Paper</a>
-        </article>
+      <div class="flex" style="gap:8px; align-items:center; margin:6px 0 10px;">
+        <button class="pill" onclick="filterPubs('all')">All</button>
+        <button class="pill" onclick="filterPubs('journal')">Journals</button>
+        <button class="pill" onclick="filterPubs('conference')">Conferences</button>
+        <span class="muted" style="margin-left:8px;">Quick filter</span>
       </div>
+      <div id="pubList" class="grid">
+
+  <!-- JOURNALS (All first author) -->
+  <article class="card" data-year="2025" data-type="journal">
+    <h3>MetaFAP: Meta-Learning for Frequency Agnostic Prediction of Metasurface Properties</h3>
+    <div class="muted">Preprint (submitted to <em>IEEE Transactions on Machine Learning in Communications and Networking</em>), March 2025</div>
+    <div class="muted">R. U. Murshed, M.S.A. Rafi, S. Reza, M. Saquib, I. Mahbub</div>
+    <div class="flex" style="margin-top:6px;">
+      <a class="pill" href="https://arxiv.org/abs/2503.14866" target="_blank" rel="noopener">arXiv</a>
+    </div>
+  </article>
+
+  <article class="card" data-year="2024" data-type="journal">
+    <h3>Beyond Traditional Beamforming: Singular Vector Projection Techniques for MU-MIMO</h3>
+    <div class="muted"><em>IEEE Communications Letters</em>, 2024. DOI: 10.1109/LCOMM.2024.3522939</div>
+    <div class="muted">R. U. Murshed, M. S. Ullah, M. Saquib, M. F. Uddin</div>
+    <div class="flex" style="margin-top:6px;">
+      <a class="pill" href="https://ieeexplore.ieee.org/document/10816401" target="_blank" rel="noopener">Paper</a>
+      <a class="pill" href="https://doi.org/10.1109/LCOMM.2024.3522939" target="_blank" rel="noopener">DOI</a>
+    </div>
+  </article>
+
+  <article class="card" data-year="2024" data-type="journal">
+    <h3>Real-time Seismic Intensity Prediction using Self-supervised Contrastive GNN for Earthquake Early Warning</h3>
+    <div class="muted"><em>IEEE Transactions on Geoscience and Remote Sensing</em>, vol. 62, 2024, Art. no. 5909119. DOI: 10.1109/TGRS.2024.3373643</div>
+    <div class="muted">R. U. Murshed <em>et&nbsp;al.</em></div>
+    <div class="flex" style="margin-top:6px;">
+      <a class="pill" href="https://ieeexplore.ieee.org/abstract/document/10459332" target="_blank" rel="noopener">Paper</a>
+      <a class="pill" href="https://doi.org/10.1109/TGRS.2024.3373643" target="_blank" rel="noopener">DOI</a>
+    </div>
+  </article>
+
+  <article class="card" data-year="2023" data-type="journal">
+    <h3>A CNN-based Multifaceted Signal Processing Framework for Heart Rate Proctoring Using Millimeter-Wave Radar Ballistocardiography</h3>
+    <div class="muted"><em>Array</em>, vol. 20, 2023, 100327. DOI: 10.1016/j.array.2023.100327</div>
+    <div class="muted">R. U. Murshed <em>et&nbsp;al.</em></div>
+    <div class="flex" style="margin-top:6px;">
+      <a class="pill" href="https://www.sciencedirect.com/science/article/pii/S2590005623000528" target="_blank" rel="noopener">Paper</a>
+      <a class="pill" href="https://doi.org/10.1016/j.array.2023.100327" target="_blank" rel="noopener">DOI</a>
+    </div>
+  </article>
+
+  <article class="card" data-year="2023" data-type="journal">
+    <h3>A CNN-LSTM-based Fusion Separation Deep Neural Network for 6G Ultra-Massive MIMO Hybrid Beamforming</h3>
+    <div class="muted"><em>IEEE Access</em>, vol. 11, pp. 38614–38630, 2023. DOI: 10.1109/ACCESS.2023.3266355</div>
+    <div class="muted">R. U. Murshed <em>et&nbsp;al.</em></div>
+    <div class="flex" style="margin-top:6px;">
+      <a class="pill" href="https://ieeexplore.ieee.org/document/10098778" target="_blank" rel="noopener">Paper</a>
+      <a class="pill" href="https://doi.org/10.1109/ACCESS.2023.3266355" target="_blank" rel="noopener">DOI</a>
+    </div>
+  </article>
+
+  <!-- CONFERENCES (All first author) -->
+  <article class="card" data-year="2024" data-type="conference">
+    <h3>Self-supervised Contrastive Learning for 6G UM-MIMO THz Communications: Improving Robustness Under Imperfect CSI</h3>
+    <div class="muted">IEEE International Conference on Communications Workshops (ICC Workshops), Denver, CO, USA, 2024, pp. 220–226. DOI: 10.1109/ICCWorkshops59551.2024.10615313</div>
+    <div class="muted">R. U. Murshed, M. S. Ullah, M. Saquib, M. Z. Win</div>
+    <div class="flex" style="margin-top:6px;">
+      <a class="pill" href="https://ieeexplore.ieee.org/document/10615313" target="_blank" rel="noopener">Paper</a>
+      <a class="pill" href="https://doi.org/10.1109/ICCWorkshops59551.2024.10615313" target="_blank" rel="noopener">DOI</a>
+    </div>
+  </article>
+
+  <article class="card" data-year="2024" data-type="conference">
+    <h3>A Fast Effective Greedy Approach for MU-MIMO Beam Selection in mm-Wave and THz Communications</h3>
+    <div class="muted">58th Annual Conference on Information Sciences and Systems (CISS), Princeton, NJ, USA, 2024, pp. 1–6. DOI: 10.1109/CISS59072.2024.10480178</div>
+    <div class="muted">R. U. Murshed, M. S. Ullah, M. Saquib</div>
+    <div class="flex" style="margin-top:6px;">
+      <a class="pill" href="https://ieeexplore.ieee.org/document/10480178" target="_blank" rel="noopener">Paper</a>
+      <a class="pill" href="https://doi.org/10.1109/CISS59072.2024.10480178" target="_blank" rel="noopener">DOI</a>
+    </div>
+  </article>
+
+  <article class="card" data-year="2023" data-type="conference">
+    <h3>Analysis of Frequency Content and Statistical Relationship among Earthquake Parameters of Seismic Data in Bangladesh</h3>
+    <div class="muted">12th International Structural Engineering and Construction Conference (ISEC), Chicago, IL, USA, 2023. DOI: 10.14455/ISEC.2023.10(1).RAD-08</div>
+    <div class="muted">R. U. Murshed <em>et&nbsp;al.</em></div>
+    <div class="flex" style="margin-top:6px;">
+      <a class="pill" href="https://www.isec-society.org/ISEC_PRESS/ISEC_12/xml/RAD-08.xml" target="_blank" rel="noopener">Paper</a>
+      <a class="pill" href="https://doi.org/10.14455/ISEC.2023.10(1).RAD-08" target="_blank" rel="noopener">DOI</a>
+    </div>
+  </article>
+
+  <article class="card" data-year="2022" data-type="conference">
+    <h3>Automated Level Crossing System: A Computer Vision-Based Approach with Raspberry Pi Microcontroller</h3>
+    <div class="muted">12th International Conference on Electrical and Computer Engineering (ICECE), Dhaka, Bangladesh, 2022, pp. 180–183. DOI: 10.1109/ICECE57408.2022.10089007</div>
+    <div class="muted">R. U. Murshed, S. K. Dhruba, M. T. I. Bhuian, M. R. Akter</div>
+    <div class="flex" style="margin-top:6px;">
+      <a class="pill" href="https://ieeexplore.ieee.org/document/10089007" target="_blank" rel="noopener">Paper</a>
+      <a class="pill" href="https://doi.org/10.1109/ICECE57408.2022.10089007" target="_blank" rel="noopener">DOI</a>
+    </div>
+  </article>
+
+  <article class="card" data-year="2021" data-type="conference">
+    <h3>Deep Learning Based Power Allocation in 6G URLLC for Jointly Optimizing Latency and Reliability</h3>
+    <div class="muted">5th International Conference on Electrical Information and Communication Technology (EICT), Khulna, Bangladesh, 2021, pp. 1–6. DOI: 10.1109/EICT54103.2021.9733558</div>
+    <div class="muted">R. U. Murshed, A. H. Hridhon, M. F. Hossain</div>
+    <div class="flex" style="margin-top:6px;">
+      <a class="pill" href="https://ieeexplore.ieee.org/document/9733558" target="_blank" rel="noopener">Paper</a>
+      <a class="pill" href="https://doi.org/10.1109/EICT54103.2021.9733558" target="_blank" rel="noopener">DOI</a>
+    </div>
+  </article>
+
+</div>
+
     </section>
 
     <section class="panel p24 anchor" id="projects">
@@ -210,6 +294,15 @@
         c.style.display = t.includes(q) ? '' : 'none';
       });
     });
+  <script>
+  function filterPubs(type) {
+    const cards = document.querySelectorAll('#pubList .card');
+    cards.forEach(c => {
+      const t = c.getAttribute('data-type');
+      c.style.display = (type === 'all' || t === type) ? '' : 'none';
+    });
+  }
+  </script>
 
     // JSON-LD structured data for SEO
     const jsonLd = {
