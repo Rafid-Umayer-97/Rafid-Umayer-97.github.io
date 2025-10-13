@@ -107,36 +107,7 @@ main {
   padding: 2.5rem 1.5rem 4rem;
 }
 
-.hero {
-  display: flex;
-  align-items: center;
-  gap: 2.75rem;
-  flex-wrap: wrap;
-  padding: 3.5rem 0 1rem;
-}
 
-.hero-content {
-  flex: 1 1 340px;
-}
-
-.hero-content h1 {
-  font-size: clamp(2.4rem, 3.4vw + 1.2rem, 3.4rem);
-  margin: 0 0 0.75rem;
-  color: var(--primary-dark);
-}
-
-.hero-content p {
-  margin: 0;
-  font-size: 1.1rem;
-  color: var(--muted);
-}
-
-.hero-cta {
-  margin-top: 1.75rem;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
 
 .button {
   display: inline-block;
@@ -176,6 +147,8 @@ main {
   position: relative;
   display: grid;
   gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: start;
+  grid-template-columns: minmax(0, 1fr);
   padding: clamp(2.75rem, 6vw, 4rem) 0 clamp(2.5rem, 6vw, 4rem);
 }
 
@@ -190,21 +163,24 @@ main {
 }
 
 .hero-content {
-  max-width: 65ch;
+  max-width: min(58ch, 640px);
+  justify-self: start;
 }
 
 .hero-content h1 {
-  margin: 0 0 0.75rem;
-  font-size: clamp(2.6rem, 2.6vw + 1.8rem, 3.75rem);
+  margin: 0 0 0.5rem;
+  font-size: clamp(2.35rem, 2.6vw + 1.6rem, 3.4rem);
   letter-spacing: -0.01em;
   color: var(--primary-dark);
+  line-height: 1.1;
 }
 
 .hero-subheading {
   margin: 0 0 1.5rem;
-  font-size: clamp(1.15rem, 1vw + 1rem, 1.45rem);
+  font-size: clamp(1.1rem, 0.85vw + 1rem, 1.4rem);
   font-weight: 500;
   color: var(--muted);
+  line-height: 1.35;
 }
 
 .hero-text {
@@ -215,13 +191,16 @@ main {
 }
 
 .hero-cta {
-  margin-top: 2.25rem;
+  margin-top: clamp(1.75rem, 2.5vw, 2.5rem);
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
   justify-content: flex-start;
 }
 
 .hero-photo {
   margin: 0;
-  max-width: min(100%, 420px);
+  max-width: min(100%, 430px);
   border-radius: 12px;
   overflow: hidden;
   border: 1px solid rgba(31, 75, 153, 0.15);
@@ -238,12 +217,18 @@ main {
 
 @media (min-width: 861px) {
   .hero {
-    grid-template-columns: minmax(0, 1fr) auto;
-    align-items: center;
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
   }
 
   .hero-photo {
     justify-self: end;
+    align-self: center;
+  }
+}
+
+@media (max-width: 860px) {
+  .hero-photo {
+    max-width: min(85vw, 420px);
   }
 }
 
