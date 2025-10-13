@@ -39,49 +39,84 @@
     </header>
 
     <main>
-      <div class="page-heading">
-        <h1>Projects</h1>
-        <p>
-          Selected projects that translate physics-informed learning into actionable systems for resilient wireless
-          communication.
-        </p>
+      <h1>Projects</h1>
+      <p class="muted">
+        A selection of projects spanning wireless networking, sensing, and edge AI. The highlights below include
+        real-world deployments and data-driven methods.
+      </p>
+
+      <div class="project-grid">
+        <!-- 1) Weather-Aware Latency Prediction -->
+        <article class="project-card">
+          <figure class="project-figure">
+            <img
+              src="/img/project-weather-latency.jpg"
+              alt="Visualization of weather-aware latency modeling on the ARA testbed"
+              width="1200"
+              height="800"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <h2>Weather-Aware Latency Prediction</h2>
+          <p>
+            Reliable low-latency wireless is crucial for real-time applications. I studied how rainfall, humidity, and
+            pressure influence latency using experiments on the NSF ARA testbed and co-located weather data. We built
+            predictive models that relate weather to network KPIs, enabling proactive, weather-aware network management.
+            This work was presented at NSF MERIF and ARAFest.
+          </p>
+        </article>
+
+        <!-- 2) Earthquake Early Warning (EEW) -->
+        <article class="project-card">
+          <figure class="project-figure">
+            <img
+              src="/img/project-eew.jpg"
+              alt="Graph-based seismic early warning model concept"
+              width="1200"
+              height="800"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <h2>Earthquake Early Warning (EEW)</h2>
+          <p>
+            As a research engineer at the Japan Institute of Disaster Prevention and Urban Safety, I developed a
+            self-supervised contrastive GNN that predicts seismic intensity in real time from short waveform windows. The
+            model achieved high accuracy (low MSE on EMS-98) and supports alerts several seconds before strong
+            shaking—contributing to AI-enhanced disaster response.
+          </p>
+        </article>
+
+        <!-- 3) Automated Level-Crossing System -->
+        <article class="project-card">
+          <figure class="project-figure">
+            <img
+              src="/img/project-level-crossing.jpg"
+              alt="Raspberry-Pi powered level crossing system detecting incoming trains"
+              width="1200"
+              height="800"
+              loading="lazy"
+              decoding="async"
+            />
+          </figure>
+          <h2>Automated Level-Crossing System</h2>
+          <p>
+            For improving rail safety at unmanned crossings, I built a Raspberry-Pi system with computer vision for train
+            detection and servo-controlled barriers. The prototype performs on-device inference and triggers alarms and
+            gate control in real time, demonstrating low-cost edge AI for safety-critical infrastructure.
+          </p>
+        </article>
       </div>
 
-      <section class="section">
-        <h2>Highlights</h2>
-        <div class="card-grid">
-          <article class="card">
-            <h3>Latency–Weather Analysis on ARA</h3>
-            <p>
-              Empirical study of how precipitation, temperature, and wind patterns perturb wireless KPIs on the Arizona
-              Research Array (ARA) testbed, paired with predictive models to forecast reliability in rural networks.
-            </p>
-          </article>
-          <article class="card">
-            <h3>IOSVB: Interference-Optimized Singular Vector Beamforming</h3>
-            <p>
-              Low-complexity MU-MIMO beamforming that projects onto dominant singular vectors while provably bounding
-              interference, enabling fast adaptation to dense multiuser deployments.
-            </p>
-          </article>
-          <article class="card">
-            <h3>Neural RF Fields</h3>
-            <p>
-              Neural radiance field adaptations that learn multi-frequency RF propagation structure for channel
-              estimation, environment mapping, and joint sensing-communication planning.
-            </p>
-          </article>
-        </div>
-      </section>
+      <hr class="projects-sep" />
 
-      <section class="section">
-        <h2>Connecting research and deployment</h2>
-        <p>
-          Each project is grounded in the same principle: fuse domain physics with data-driven intelligence to deliver
-          reproducible gains in beamforming accuracy, sensing robustness, and wireless situational awareness. I enjoy
-          collaborating with interdisciplinary teams to move these ideas from simulation to hardware testbeds.
-        </p>
-      </section>
+      <h2>Other projects</h2>
+      <ul class="project-list-compact">
+        <li>Military-grade encryption radio (hardware-prototype implementation)</li>
+        <li>FPGA-based automated cooling system (hardware-prototype implementation)</li>
+        <li>STM-32–based voltage protection for industrial loads</li>
+      </ul>
     </main>
 
     <footer class="site-footer">
