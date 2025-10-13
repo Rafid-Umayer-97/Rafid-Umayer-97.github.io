@@ -250,6 +250,29 @@ main {
   margin: 0.75rem 0 0;
 }
 
+.research-grid {
+  display: grid;
+  gap: 2rem;
+  margin-top: 1.75rem;
+}
+
+.research-grid h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--primary-dark);
+}
+
+.research-grid p {
+  margin: 0.75rem 0 0;
+  color: var(--text);
+}
+
+@media (min-width: 720px) {
+  .research-grid {
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  }
+}
+
 .highlight-list {
   list-style: none;
   padding: 0;
