@@ -50,44 +50,68 @@
       <section class="section">
         <h2>Research overview</h2>
         <p>
-          My doctoral work at the <a href="https://illinois.edu/">University of Illinois Urbana-Champaign</a> centers on
-          physics-guided AI for wireless propagation, ultra-massive MIMO beamforming, and reconfigurable metasurfaces. By
-          infusing Maxwell's equations, scattering theory, and array processing insights into neural representations, I
-          aim to build reliable channel models and beamformers that generalize across environments and frequency bands.
-        </p>
-        <p>
-          Prior to UIUC, I completed an M.Sc. (Thesis) in Electrical Engineering at
-          <a href="https://www.utdallas.edu/">The University of Texas at Dallas</a>, where I focused on RF learning, and a
-          B.Sc. in Electrical &amp; Electronic Engineering at <a href="https://www.buet.ac.bd/">BUET</a>. Those experiences
-          grounded my research in both electromagnetics and applied machine learning.
+          I work on Physics-Informed AI for next-generation wireless—building data-efficient, high-fidelity digital twins of radio environments that learn complex wave propagation and support trustworthy 6G networks. The goal is better beamforming, robust sensing, and integrated communication-sensing through models that align with wireless physics while remaining practical at scale.
         </p>
       </section>
 
       <section class="section">
-        <h2>Current interests</h2>
-        <ul class="highlight-list">
-          <li>Physics-guided deep learning for RF propagation and ultra-massive MIMO beamforming.</li>
-          <li>Neural representations and generative models for wireless channel emulation.</li>
-          <li>Reliable sensing-communication co-design, RIS/metasurface control, and 6G digital twins.</li>
-        </ul>
+        <h2>Current research</h2>
+        <div class="research-grid">
+          <article>
+            <h3>Physics-informed propagation models</h3>
+            <p>
+              I develop learning models that complement ray-tracing/analytical baselines, improving link reliability and beam/beam-pair selection in dynamic, cluttered scenes.
+            </p>
+          </article>
+          <article>
+            <h3>Closing the sim-to-real gap</h3>
+            <p>
+              I study how wireless models drift between synthetic RT data and real measurements and design training/validation protocols (and losses) that make predictions reliable under CSI errors and hardware limits.
+            </p>
+          </article>
+          <article>
+            <h3>Domain-specific neural architectures for wireless</h3>
+            <p>
+              I design architectures and objectives tailored to MU-MIMO / RIS structure (e.g., interference-aware objectives, meta-learning across bands) so models are both accurate and low-latency in deployment.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section class="section">
-        <h2>Research highlights</h2>
-        <ul class="timeline">
-          <li>
-            <span class="timeline-date">MetaFAP</span>
-            <span class="timeline-description">Meta-learning for frequency-agnostic prediction of metasurface properties to accelerate reconfigurable intelligent surface control.</span>
-          </li>
-          <li>
-            <span class="timeline-date">Singular Vector Projection</span>
-            <span class="timeline-description">Novel beamforming strategies for MU-MIMO that ensure interference control while remaining lightweight for deployment.</span>
-          </li>
-          <li>
-            <span class="timeline-date">Self-supervised UM-MIMO</span>
-            <span class="timeline-description">Contrastive learning techniques that enhance robustness of THz ultra-massive MIMO links under imperfect channel state information.</span>
-          </li>
-        </ul>
+        <h2>Past research</h2>
+        <div class="research-grid">
+          <article>
+            <h3>Beamforming (SU-/MU-MIMO)</h3>
+            <p>
+              My work on beamforming spans single-user and multi-user systems. I designed a CNN–LSTM hybrid architecture that accelerates hybrid beamforming by over 100× compared to classical algorithms while maintaining optimal performance. Later, I developed singular-vector projection methods with provable interference bounds, and showed how contrastive learning can make beamforming robust to imperfect channel state information. These approaches together bridge theory and machine learning for efficient 6G MIMO.
+            </p>
+          </article>
+          <article>
+            <h3>Meta-learning for metasurfaces (RIS)</h3>
+            <p>
+              I developed MetaFAP, a meta-learning framework that predicts metasurface responses across frequencies, allowing models trained at low bands to generalize to much higher frequencies with high accuracy. I also contributed to impedance-regulated deep neural networks (IR-DNNs), which directly map surface configurations to interference-suppressing behaviors. These works open the door for practical, fast, and scalable optimization of RIS-assisted networks.
+            </p>
+          </article>
+          <article>
+            <h3>Weather-aware network latency prediction</h3>
+            <p>
+              At the ARA testbed, I analyzed how weather conditions affect wireless latency. Using real experimental data, I built predictive models that capture the correlation between weather and network KPIs. This research was highlighted at MERIF and ARAFest, where I was invited with NSF travel support, and it points to future wireless networks that adapt not only to spectrum but also to the physical environment.
+            </p>
+          </article>
+          <article>
+            <h3>Computer vision for object detection &amp; safety</h3>
+            <p>
+              Beyond wireless, I explored real-time computer vision for safety-critical infrastructure. I adapted YOLOv5 for vehicle detection, achieving higher accuracy in traffic surveillance. I also built a Raspberry-Pi–based automated level crossing system that detects approaching trains and controls barriers in real time, demonstrating how lightweight AI can run at the network edge to improve safety.
+            </p>
+          </article>
+          <article>
+            <h3>Seismic early warning</h3>
+            <p>
+              I designed a self-supervised graph neural network that predicts earthquake intensity in real time, giving communities precious seconds to prepare. The system integrates physics-aware learning of seismic wave propagation and achieved significant gains over existing methods. I also analyzed seismic data from Bangladesh using Fourier and wavelet techniques, uncovering patterns in frequency content and correlations among earthquake parameters.
+            </p>
+          </article>
+        </div>
       </section>
     </main>
 
