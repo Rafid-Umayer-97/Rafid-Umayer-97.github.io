@@ -107,36 +107,7 @@ main {
   padding: 2.5rem 1.5rem 4rem;
 }
 
-.hero {
-  display: flex;
-  align-items: center;
-  gap: 2.75rem;
-  flex-wrap: wrap;
-  padding: 3.5rem 0 1rem;
-}
 
-.hero-content {
-  flex: 1 1 340px;
-}
-
-.hero-content h1 {
-  font-size: clamp(2.4rem, 3.4vw + 1.2rem, 3.4rem);
-  margin: 0 0 0.75rem;
-  color: var(--primary-dark);
-}
-
-.hero-content p {
-  margin: 0;
-  font-size: 1.1rem;
-  color: var(--muted);
-}
-
-.hero-cta {
-  margin-top: 1.75rem;
-  display: flex;
-  gap: 1rem;
-  flex-wrap: wrap;
-}
 
 .button {
   display: inline-block;
@@ -171,17 +142,94 @@ main {
   transform: translateY(-2px);
 }
 
-.hero-image {
-  flex: 0 1 260px;
-  display: flex;
-  justify-content: center;
+/* hero rename: name+affiliation */
+.hero {
+  position: relative;
+  display: grid;
+  gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: start;
+  grid-template-columns: minmax(0, 1fr);
+  padding: clamp(2.75rem, 6vw, 4rem) 0 clamp(2.5rem, 6vw, 4rem);
 }
 
-.hero-image img {
+.hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
   width: 100%;
-  max-width: 260px;
-  border-radius: 50%;
-  box-shadow: var(--shadow);
+  height: 1px;
+  background: linear-gradient(90deg, rgba(31, 75, 153, 0.12), rgba(31, 75, 153, 0));
+}
+
+.hero-content {
+  max-width: min(58ch, 640px);
+  justify-self: start;
+}
+
+.hero-content h1 {
+  margin: 0 0 0.5rem;
+  font-size: clamp(2.35rem, 2.6vw + 1.6rem, 3.4rem);
+  letter-spacing: -0.01em;
+  color: var(--primary-dark);
+  line-height: 1.1;
+}
+
+.hero-subheading {
+  margin: 0 0 1.5rem;
+  font-size: clamp(1.1rem, 0.85vw + 1rem, 1.4rem);
+  font-weight: 500;
+  color: var(--muted);
+  line-height: 1.35;
+}
+
+.hero-text {
+  margin: 0;
+  font-size: 1.125rem;
+  color: var(--muted);
+  max-width: 60ch;
+}
+
+.hero-cta {
+  margin-top: clamp(1.75rem, 2.5vw, 2.5rem);
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+.hero-photo {
+  margin: 0;
+  max-width: min(100%, 430px);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(31, 75, 153, 0.15);
+  box-shadow: 0 20px 45px rgba(15, 35, 95, 0.12);
+  background: #ffffff;
+  justify-self: center;
+}
+
+.hero-photo img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 861px) {
+  .hero {
+    grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  }
+
+  .hero-photo {
+    justify-self: end;
+    align-self: center;
+  }
+}
+
+@media (max-width: 860px) {
+  .hero-photo {
+    max-width: min(85vw, 420px);
+  }
 }
 
 .section {
