@@ -5,17 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Projects | Rafid Umayer Murshed</title>
-    <meta
-      name="description"
-      content="Projects led by Rafid Umayer Murshed spanning wireless propagation analytics, metasurface intelligence, and neural RF modeling." />
+    <meta name="description" content="Projects by Rafid Umayer Murshed in wireless digital twins, inverse navigation, weather-aware networking, earthquake early warning, and edge AI." />
     <link rel="canonical" href="https://rafid-umayer-97.github.io/projects.html" />
     <meta property="og:title" content="Projects | Rafid Umayer Murshed" />
-    <meta
-      property="og:description"
-      content="Explore Rafid Umayer Murshed's projects on latency-weather analytics, interference-optimized beamforming, and neural RF fields for 6G." />
+    <meta property="og:description" content="Projects by Rafid Umayer Murshed in wireless digital twins, inverse navigation, weather-aware networking, earthquake early warning, and edge AI." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://rafid-umayer-97.github.io/projects.html" />
-    <meta property="og:image" content="https://github.com/Rafid-Umayer-97.png" />
+    <meta property="og:image" content="https://rafid-umayer-97.github.io/img/Rafid-formal.jpg" />
     <meta property="og:site_name" content="Rafid Umayer Murshed" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" href="css/main.css" />
@@ -32,104 +28,40 @@
             <li><a href="publications.html">Publications</a></li>
             <li><a href="hobbies.html">Hobbies</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="cv/Rafid_CV_Full.pdf">CV</a></li>
+            <li><a href="cv/Rafid_CV_Full_June.pdf">CV</a></li>
           </ul>
         </nav>
       </div>
     </header>
-
     <main>
-      <h1>Projects</h1>
-      <p class="muted">
-        A selection of projects spanning wireless networking, sensing, and edge AI. The highlights below include
-        real-world deployments and data-driven methods.
-      </p>
-
-      <div class="project-grid">
-        <!-- 1) Weather-Aware Latency Prediction -->
-        <article class="project-card">
-          <figure class="project-figure">
-            <img
-              src="/img/project-weather-latency.jpg"
-              alt="Visualization of weather-aware latency modeling on the ARA testbed"
-              width="1200"
-              height="800"
-              loading="lazy"
-              decoding="async"
-            />
-          </figure>
-          <h2>Weather-Aware Latency Prediction</h2>
-          <p>
-            Reliable low-latency wireless is crucial for real-time applications. We studied how rainfall, snow, humidity, and
-            pressure influence latency using experiments on the NSF PAWR ARA testbed and weather data from ARA's weather stations. We built
-            predictive models that relate weather to network KPIs, enabling proactive, weather-aware network management.
-            I was invited as a guest-speaker to present this work at NSF MERIF and ARAFest.
-          </p>
-        </article>
-
-        <!-- 2) Earthquake Early Warning (EEW) -->
-        <article class="project-card">
-          <figure class="project-figure">
-            <img
-              src="/img/project-eew.jpg"
-              alt="Graph-based seismic early warning model concept"
-              width="1200"
-              height="800"
-              loading="lazy"
-              decoding="async"
-            />
-          </figure>
-          <h2>Earthquake Early Warning (EEW)</h2>
-          <p>
-            As a research engineer at the Japan Institute of Disaster Prevention and Urban Safety, I developed a
-            self-supervised contrastive GNN that predicts seismic intensity in real time from short waveform windows. The
-            model achieved high accuracy (low MSE on EMS-98) and supports alerts several seconds before strong
-            shaking—contributing to AI-enhanced disaster response.
-          </p>
-        </article>
-
-        <!-- 3) Automated Level-Crossing System -->
-        <article class="project-card">
-          <figure class="project-figure">
-            <img
-              src="/img/project-level-crossing.jpg"
-              alt="Raspberry-Pi powered level crossing system detecting incoming trains"
-              width="1200"
-              height="800"
-              loading="lazy"
-              decoding="async"
-            />
-          </figure>
-          <h2>Automated Level-Crossing System</h2>
-          <p>
-            For improving rail safety at unmanned crossings, I built a Raspberry-Pi system with computer vision for train
-            detection and servo-controlled barriers. The prototype performs on-device inference and triggers alarms and
-            gate control in real time, demonstrating low-cost edge AI for safety-critical infrastructure.
-          </p>
-        </article>
+      <div class="page-heading">
+        <p class="eyebrow">Project portfolio</p>
+        <h1>Projects</h1>
+        <p>Selected work translating physics-informed AI, signal processing, and edge intelligence into wireless systems, sensing applications, and safety-critical prototypes.</p>
       </div>
-
-      <hr class="projects-sep" />
-
-      <h2>Other projects</h2>
-      <ul class="project-list-compact">
-        <li>Military-grade encryption radio (hardware-prototype implementation)</li>
-        <li>FPGA-based automated cooling system (hardware-prototype implementation)</li>
-        <li>STM-32–based voltage protection for industrial loads</li>
-      </ul>
+      <div class="project-grid">
+        <article class="project-card"><figure class="project-figure"><img src="img/WiNeRF_for_Homepage.jpg" alt="WiNeRF neural wireless field project" loading="lazy" decoding="async" /></figure><div class="card-meta"><span>Wireless NeRF</span><span>EWSN 2026</span></div><h2>WiNeRF wireless channel modeling</h2><p>Designed for actionable wireless digital twins, WiNeRF learns complex-valued CSI fields from sparse measurements while incorporating antenna-array observability through cone-based sampling.</p></article>
+        <article class="project-card"><figure class="project-figure"><img src="img/INAV_for_Homepage.jpg" alt="I-NAV GPS-denied geolocation project" loading="lazy" decoding="async" /></figure><div class="card-meta"><span>GPS-denied</span><span>Array</span></div><h2>I-NAV inverse navigation</h2><p>Developed an inverse geolocation framework that infers possible locations from questionnaire-based travel cues and operates fully offline when GPS is unavailable.</p></article>
+        <article class="project-card"><figure class="project-figure"><img src="img/project-weather-latency.jpg" alt="Weather-aware latency modeling on the ARA testbed" loading="lazy" decoding="async" /></figure><div class="card-meta"><span>ARA testbed</span><span>Network analytics</span></div><h2>Weather-aware latency prediction</h2><p>Analyzed how rainfall, snow, humidity, pressure, and other environmental variables influence wireless latency using NSF PAWR ARA experiments and weather station data.</p></article>
+        <article class="project-card"><figure class="project-figure"><img src="img/project-eew.jpg" alt="Seismic graph neural network project" loading="lazy" decoding="async" /></figure><div class="card-meta"><span>IEEE TGRS</span><span>GNN</span></div><h2>Earthquake early warning</h2><p>Built a self-supervised contrastive graph neural network for real-time seismic intensity prediction, supporting warning decisions from short waveform windows.</p></article>
+        <article class="project-card"><figure class="project-figure"><img src="img/project-level-crossing.jpg" alt="Automated level crossing system" loading="lazy" decoding="async" /></figure><div class="card-meta"><span>Edge AI</span><span>Raspberry Pi</span></div><h2>Automated level crossing system</h2><p>Implemented a Raspberry-Pi computer vision prototype for train detection, alarms, and barrier control at unmanned crossings.</p></article>
+        <article class="project-card"><figure class="project-figure"><img src="img/Past_research.jpg" alt="Past wireless research collage" loading="lazy" decoding="async" /></figure><div class="card-meta"><span>MIMO</span><span>RIS</span><span>THz</span></div><h2>Beamforming and metasurface intelligence</h2><p>Developed deep learning, greedy optimization, singular-vector projection, and meta-learning methods for massive MIMO, THz robustness, and reconfigurable intelligent surfaces.</p></article>
+      </div>
+      <section class="section"><h2>Additional prototypes</h2><ul class="project-list-compact"><li>Military-grade encryption radio hardware prototype.</li><li>FPGA-based automated cooling system.</li><li>STM32-based voltage protection for industrial loads.</li></ul></section>
     </main>
-
     <footer class="site-footer">
       <div class="footer-content">
         <div>
           <strong>Rafid Umayer Murshed</strong><br />
-          <a href="mailto:rafid.buet.eee16@gmail.com">rafid.buet.eee16@gmail.com</a><br />
-          <a href="mailto:rum3@illinois.edu">rum3@illinois.edu</a>
+          Computer Science PhD Student, UIUC<br />
+          ML Research Intern, InterDigital AI Lab<br />
+          <a href="mailto:rum3@illinois.edu">rum3@illinois.edu</a> · <a href="mailto:rafid.buet.eee16@gmail.com">rafid.buet.eee16@gmail.com</a>
         </div>
         <ul class="footer-links">
           <li><a href="https://scholar.google.com/citations?user=-ZwK1vkAAAAJ&amp;hl=en">Google Scholar</a></li>
           <li><a href="https://github.com/Rafid-Umayer-97">GitHub</a></li>
           <li><a href="https://www.linkedin.com/in/rafid-murshed97/">LinkedIn</a></li>
+          <li><a href="cv/Rafid_CV_Full_June.pdf">CV</a></li>
         </ul>
       </div>
     </footer>
