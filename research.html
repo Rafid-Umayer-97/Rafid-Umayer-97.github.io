@@ -5,13 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Research | Rafid Umayer Murshed</title>
-    <meta name="description" content="Research portfolio of Rafid Umayer Murshed on physics-informed AI, neural fields, hybrid neural operators, wireless channel modeling, and 6G digital twins." />
+    <meta
+      name="description"
+      content="Research by Rafid Umayer Murshed on physics-informed AI, wireless propagation modeling, ultra-massive MIMO beamforming, and intelligent metasurfaces." />
     <link rel="canonical" href="https://rafid-umayer-97.github.io/research.html" />
     <meta property="og:title" content="Research | Rafid Umayer Murshed" />
-    <meta property="og:description" content="Research portfolio of Rafid Umayer Murshed on physics-informed AI, neural fields, hybrid neural operators, wireless channel modeling, and 6G digital twins." />
+    <meta
+      property="og:description"
+      content="Physics-guided machine learning for wireless propagation, UM-MIMO beamforming, metasurface control, and trustworthy 6G systems." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://rafid-umayer-97.github.io/research.html" />
-    <meta property="og:image" content="https://rafid-umayer-97.github.io/img/Rafid-formal.jpg" />
+    <meta property="og:image" content="https://github.com/Rafid-Umayer-97.png" />
     <meta property="og:site_name" content="Rafid Umayer Murshed" />
     <meta name="twitter:card" content="summary_large_image" />
     <link rel="stylesheet" href="css/main.css" />
@@ -28,7 +32,7 @@
             <li><a href="publications.html">Publications</a></li>
             <li><a href="hobbies.html">Hobbies</a></li>
             <li><a href="contact.html">Contact</a></li>
-            <li><a href="cv/Rafid_CV_Full_June.pdf">CV</a></li>
+            <li><a href="cv/Rafid_CV_Full.pdf">CV</a></li>
           </ul>
         </nav>
       </div>
@@ -36,58 +40,177 @@
 
     <main>
       <div class="page-heading">
-        <p class="eyebrow">Research agenda</p>
-        <h1>Physics-informed AI for wireless intelligence.</h1>
-        <p>I design models that treat electromagnetic structure, hardware limits, and sparse measurements as useful inductive biases rather than nuisances.</p>
-        <blockquote class="research-quote"><p>“The knowledge of anything, since all things have causes, is not acquired or complete unless it is known by its causes.”</p><footer>— Ibn Sina</footer></blockquote>
+        <h1>Research</h1>
+        <blockquote class="research-quote">
+          <p>
+            “The knowledge of anything, since all things have causes, is not acquired or complete unless it is known by its
+            causes.”
+          </p>
+          <footer>— Ibn Sina</footer>
+        </blockquote>
         <div class="research-quick-links" role="navigation" aria-label="Research section shortcuts">
-          <a class="quick-link" href="#current-research">Current research</a>
-          <a class="quick-link" href="#selected-projects">Selected systems</a>
-          <a class="quick-link" href="#collaborators">Collaborators</a>
+          <a class="quick-link" href="#current-research">Current Research</a>
+          <a class="quick-link" href="#past-research">Past Research</a>
+          <a class="quick-link" href="#collaborators">Research Collaborators</a>
         </div>
       </div>
 
+      <section class="section">
+        <h2>Research overview</h2>
+        <p>
+          I work on Physics-Informed AI for next-generation wireless—building data-efficient, high-fidelity digital twins of radio environments that learn complex wave propagation and support trustworthy 6G networks. The goal is better beamforming, robust sensing, and integrated communication-sensing through models that align with wireless physics while remaining practical at scale.
+        </p>
+      </section>
+
       <section class="section" id="current-research">
-        <p class="kicker">Current research</p>
-        <h2>Wireless foundation models grounded in physics and deployable hardware</h2>
-        <div class="card-grid">
-          <article class="card"><h3>Neural fields for RF channels</h3><p>WiNeRF learns continuous, complex-valued wireless channel representations from sparse CSI while embedding antenna geometry, phase uncertainty, and limited spatial resolution into the model.</p></article>
-          <article class="card"><h3>Hybrid neural operators</h3><p>My NeurIPS 2026 submission studies hybrid neural operators for wireless field modeling, targeting fast generalization across scenes, objects, and propagation conditions.</p></article>
-          <article class="card"><h3>AI-native 6G compression</h3><p>At InterDigital AI Lab, I am working on unsupervised physics-based CSI compression and spatiotemporal channel forecasting for compact, actionable wireless digital twins.</p></article>
-        </div>
+        <h2>Current research</h2>
         <figure class="feature-figure">
-          <img src="/img/Current_research.jpg" alt="Research diagram for physics-informed AI wireless field modeling" loading="lazy" decoding="async" />
-          <figcaption>Current direction: object-centric, physics-aware neural representations for wireless fields and integrated sensing-communication.</figcaption>
+          <img
+            src="/img/Current_research.jpg"
+            width="1280"
+            height="720"
+            loading="lazy"
+            decoding="async"
+            alt="Conceptual visualization of physics-informed AI models guiding wireless propagation decisions" />
+          <figcaption>
+            Physics-informed AI creates robust wireless propagation models by pairing neural inference with domain knowledge.
+          </figcaption>
         </figure>
-      </section>
-
-      <section class="section" id="selected-projects">
-        <p class="kicker">Selected systems</p>
-        <h2>From radio environments to safety-critical sensing</h2>
-        <div class="feature-grid">
-          <article class="feature-card"><img src="/img/WiNeRF_for_Homepage.jpg" alt="WiNeRF system overview" /><div><h3>WiNeRF</h3><p>EWSN 2026 accepted work on hardware-constrained radiance fields for actionable channel modeling.</p></div></article>
-          <article class="feature-card"><img src="/img/Past_research.jpg" alt="Past research diagram" /><div><h3>6G beamforming</h3><p>Low-complexity, learning-assisted algorithms for MU-MIMO, THz, and metasurface-enabled wireless systems.</p></div></article>
-          <article class="feature-card"><img src="/img/project-eew.jpg" alt="Earthquake early warning project" /><div><h3>Earthquake early warning</h3><p>Self-supervised contrastive GNNs for real-time seismic intensity prediction in Bangladesh.</p></div></article>
+        <div class="research-grid">
+          <article>
+            <h3>Physics-informed propagation models</h3>
+            <p>
+              I develop learning models that complement ray-tracing/analytical baselines, improving link reliability and beam/beam-pair selection in dynamic, cluttered scenes.
+            </p>
+          </article>
+          <article>
+            <h3>Closing the sim-to-real gap</h3>
+            <p>
+              I study how wireless models drift between synthetic RT data and real measurements and design training/validation protocols (and losses) that make predictions reliable under CSI errors and hardware limits.
+            </p>
+          </article>
+          <article>
+            <h3>Domain-specific neural architectures for wireless</h3>
+            <p>
+              I design architectures and objectives tailored to MU-MIMO / RIS structure (e.g., interference-aware objectives, meta-learning across bands) so models are both accurate and low-latency in deployment.
+            </p>
+          </article>
         </div>
       </section>
 
-      <section class="section" id="collaborators">
-        <p class="kicker">Collaborators and labs</p>
-        <h2>Research communities</h2>
-        <ul class="highlight-list">
-          <li><strong>UIUC iSens Lab:</strong> physics-informed learning, wireless sensing, and RF digital twins with Dr. Elahe Soltanaghai.</li>
-          <li><strong>InterDigital AI Lab:</strong> industrial AI research for AI-native channel representations and next-generation wireless standardization.</li>
-          <li><strong>UT Dallas ECE:</strong> 6G wireless signal processing, beamforming, metasurface intelligence, and robust communications with Dr. Mohammad Saquib.</li>
-          <li><strong>BUET-JIDPUS:</strong> data-driven earthquake early warning, seismic datasets, and disaster-resilient sensing systems.</li>
+      <section class="section" id="past-research">
+        <h2>Past research</h2>
+        <figure class="feature-figure">
+          <img
+            src="/img/Past_research.jpg"
+            width="1280"
+            height="720"
+            loading="lazy"
+            decoding="async"
+            alt="Collage showing past research areas from beamforming prototypes to seismic sensing analytics" />
+          <figcaption>
+            Previous projects ranged from 6G beamforming prototypes and RIS optimization to seismic early-warning analytics.
+          </figcaption>
+        </figure>
+        <div class="research-grid">
+          <article>
+            <h3>Beamforming (SU-/MU-MIMO)</h3>
+            <p>
+              My work on beamforming spans single-user and multi-user systems. I designed a CNN–LSTM hybrid architecture that accelerates hybrid beamforming by over 100× compared to classical algorithms while maintaining optimal performance. Later, I developed singular-vector projection methods with provable interference bounds, and showed how contrastive learning can make beamforming robust to imperfect channel state information. These approaches together bridge theory and machine learning for efficient 6G MIMO.
+            </p>
+          </article>
+          <article>
+            <h3>Meta-learning for metasurfaces (RIS)</h3>
+            <p>
+              I developed MetaFAP, a meta-learning framework that predicts metasurface responses across frequencies, allowing models trained at low bands to generalize to much higher frequencies with high accuracy. I also contributed to impedance-regulated deep neural networks (IR-DNNs), which directly map surface configurations to interference-suppressing behaviors. These works open the door for practical, fast, and scalable optimization of RIS-assisted networks.
+            </p>
+          </article>
+          <article>
+            <h3>Weather-aware network latency prediction</h3>
+            <p>
+              At the ARA testbed, I analyzed how weather conditions affect wireless latency. Using real experimental data, I built predictive models that capture the correlation between weather and network KPIs. This research was highlighted at MERIF and ARAFest, where I was invited with NSF travel support, and it points to future wireless networks that adapt not only to spectrum but also to the physical environment.
+            </p>
+          </article>
+          <article>
+            <h3>Computer vision for object detection &amp; safety</h3>
+            <p>
+              Beyond wireless, I explored real-time computer vision for safety-critical infrastructure. I adapted YOLOv5 for vehicle detection, achieving higher accuracy in traffic surveillance. I also built a Raspberry-Pi–based automated level crossing system that detects approaching trains and controls barriers in real time, demonstrating how lightweight AI can run at the network edge to improve safety.
+            </p>
+          </article>
+          <article>
+            <h3>Seismic early warning</h3>
+            <p>
+              I designed a self-supervised graph neural network that predicts earthquake intensity in real time, giving communities precious seconds to prepare. The system integrates physics-aware learning of seismic wave propagation and achieved significant gains over existing methods. I also analyzed seismic data from Bangladesh using Fourier and wavelet techniques, uncovering patterns in frequency content and correlations among earthquake parameters.
+            </p>
+          </article>
+        </div>
+      </section>
+      <!-- ===== Collaborators ===== -->
+      <section id="collaborators" class="section collaborators">
+        <h2>Research Collaborators</h2>
+        <p class="muted">These works would not be possible without the guidance and collaboration of exceptional faculty and researchers listed below.</p>
+      
+        <ul class="collab-list">
+          <li>
+            <a href="https://elahe.web.illinois.edu/" target="_blank" rel="noopener">
+              Prof. Elahe Soltanaghai (University of Illinois Urbana–Champaign)
+            </a>
+          </li>
+          <li>
+            <a href="https://www.utdallas.edu/~saquib/" target="_blank" rel="noopener">
+              Prof. Mohammad Saquib (The University of Texas at Dallas)
+            </a>
+          </li>
+          <li>
+            <a href="https://aeroastro.mit.edu/people/moe-z-win/" target="_blank" rel="noopener">
+              Prof. Moe Z. Win (Massachusetts Institute of Technology)
+            </a>
+          </li>
+          <li>
+            <a href="https://www.sydney.edu.au/engineering/about/our-people/academic-staff/abbas-jamalipour.html" target="_blank" rel="noopener">
+              Prof. Abbas Jamalipour (University of Sydney)
+            </a>
+          </li>
+          <li>
+            <a href="https://researchprofiles.canberra.edu.au/en/persons/kumudu-munasinghe" target="_blank" rel="noopener">
+              Prof. Kumudu Munasinghe (University of Canberra)
+            </a>
+          </li>
+          <li>
+            <a href="https://researchprofiles.canberra.edu.au/en/persons/md-farhad-hossain" target="_blank" rel="noopener">
+              Prof. Md Farhad Hossain (University of Canberra)
+            </a>
+          </li>
+          <li>
+            <a href="https://ece.utdallas.edu/people/tenure-system-faculty/mahbub-ifana/" target="_blank" rel="noopener">
+              Prof. Ifana Mahbub (The University of Texas at Dallas)
+            </a>
+          </li>
+          <li>
+            <a href="https://eee.buet.ac.bd/people/faculty/dmfu" target="_blank" rel="noopener">
+              Prof. Md. Forkan Uddin (Bangladesh University of Engineering & Technology)
+            </a>
+          </li>
+          <li>
+            <a href="https://cse.buet.ac.bd/faculty/faculty_detail/eunus" target="_blank" rel="noopener">
+              Prof. Mohammed Eunus Ali (Bangladesh University of Engineering & Technology)
+            </a>
+          </li>
+          <li>
+            <a href="https://saifulamin.info/" target="_blank" rel="noopener">
+              Prof. A.F.M. Saiful Amin (Bangladesh University of Engineering & Technology)
+            </a>
+          </li>
         </ul>
       </section>
     </main>
+
     <footer class="site-footer">
       <div class="footer-content">
         <div>
           <strong>Rafid Umayer Murshed</strong><br />
-          Computer Science PhD Student, UIUC · ML Research Intern, InterDigital AI Lab<br />
-          <a href="mailto:rum3@illinois.edu">rum3@illinois.edu</a> · <a href="mailto:rafid.buet.eee16@gmail.com">rafid.buet.eee16@gmail.com</a>
+          <a href="mailto:rafid.buet.eee16@gmail.com">rafid.buet.eee16@gmail.com</a><br />
+          <a href="mailto:rum3@illinois.edu">rum3@illinois.edu</a>
         </div>
         <ul class="footer-links">
           <li><a href="https://scholar.google.com/citations?user=-ZwK1vkAAAAJ&amp;hl=en">Google Scholar</a></li>
