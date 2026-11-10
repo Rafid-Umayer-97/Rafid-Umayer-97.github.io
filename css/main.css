@@ -50,6 +50,8 @@ main{min-height:64vh}
 .paper-figure img{display:block;width:100%;height:auto;max-height:170px;object-fit:contain;object-position:center;background:#fff;border:1px solid #eef0f3}
 .paper-figure figcaption{margin-top:5px;font-size:.74rem;color:var(--muted);line-height:1.3}
 .paper-figure--blank{min-height:0}
+.paper:has(.paper-figure--blank),.paper:has(.paper-figure[style*="display: none"]){grid-template-columns:1fr}
+
 .paper-text{min-width:0}
 .paper-title{font-size:1.02rem;font-weight:690;line-height:1.4;color:#203747;margin:0 0 5px}
 .paper-title a{color:inherit}
